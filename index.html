@@ -51,17 +51,17 @@
     <div class="container">
         <div>
             <div class="input-container">
-                <label for="num1">Dificultad del juego</label>
+                <label for="num1">Dificultad del juego (0-10)</label>
                 <input type="number" id="num1" min="0" max="10">
             </div>
             
             <div class="input-container">
-                <label for="num2">Horas jugadas</label>
+                <label for="num2">Horas jugadas (0-10)</label>
                 <input type="number" id="num2" min="0" max="10">
             </div>
             
             <div class="input-container">
-                <label for="num3">Disfrute del Platino</label>
+                <label for="num3">Disfrute del Platino (0-10) </label>
                 <input type="number" id="num3" min="0" max="10">
             </div>
             
@@ -95,7 +95,7 @@
             let n1 = parseFloat(document.getElementById('num1').value) || 0;
             let n2 = parseFloat(document.getElementById('num2').value) || 0;
             let n3 = parseFloat(document.getElementById('num3').value) || 0;
-            let resultado = (0.6 * n1) + (0.4 * n2) - (0.1 * n3);
+            let resultado = (0.6 * n1) + (0.4 * n2) - (0.05 * n3);
             document.getElementById('resultado').textContent = (Math.round(resultado * 10) / 10).toFixed(1);
         }
     </script>
