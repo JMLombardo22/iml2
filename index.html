@@ -95,7 +95,8 @@
             let n1 = parseFloat(document.getElementById('num1').value) || 0;
             let n2 = parseFloat(document.getElementById('num2').value) || 0;
             let n3 = parseFloat(document.getElementById('num3').value) || 0;
-            let resultado = (0.6 * n1) + (0.4 * n2) - (0.05 * n3);
+            let ajusteN3 = (5 - n3) * 0.1;
+            let resultado = (0.6 * n1) + (0.4 * n2) + ajusten3;
             document.getElementById('resultado').textContent = (Math.round(resultado * 10) / 10).toFixed(1);
         }
     </script>
