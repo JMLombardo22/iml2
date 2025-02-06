@@ -97,6 +97,8 @@
             let n3 = parseFloat(document.getElementById('num3').value) || 0;
             let ajusten3 = (5 - n3) * 0.1;
             let resultado = (0.6 * n1) + (0.4 * n2) + ajusten3;
+            resultado = Math.max(0, Math.min(10, resultado));
+            
             document.getElementById('resultado').textContent = (Math.round(resultado * 10) / 10).toFixed(1);
         }
     </script>
